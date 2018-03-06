@@ -17,20 +17,21 @@ void draw(){
   
     background(face);
   fill(0,0,0);
-  ellipse(mouseX, mouseY, 10, 10);
-  ellipse(mouseX + 390, mouseY, 10, 10);
+  
   
   if(mouseX < 100){
   mouseX = 100;
-}
-
-if(mouseX > 300){
+} if(mouseX > 300){
   mouseX = 300;
-}
-
-if(mouseY < 350){
+} if(mouseY < 250){
+  mouseY = 250;
+}  if(mouseY > 350){
   mouseY = 350;
 }
+
+  ellipse(mouseX, mouseY, 30, 30);
+  ellipse(mouseX + 390, mouseY, 30, 30);
+
   
   
 }
